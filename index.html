@@ -526,17 +526,17 @@
                         <div class="row">
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              <input type="text" name="name" pattern="^(?!\s).*"  class="form-control" id="name" placeholder="Your Name" required>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" pattern="[a-zA-Z0-9]*[@](gmail)*[\.](com)$" required>
                             </div>
                           </div>
                           <div class="col-md-12 mb-3">
                             <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" pattern="^(?!\s).*" required>
                             </div>
                           </div>
                           <div class="col-md-12">
